@@ -23,15 +23,15 @@ getWaitTime = input("Number of seconds between searches:")
 waitTime = int(getWaitTime)
 
 # Will it spam the server too much?
-if(waitTime < 10):
+if(waitTime < 3):
     waitTime = 3
-    print("Number of seconds too low. Ten seconds chosen.")
+    print("Number of seconds too low. Three seconds chosen.")
 
 getTimesChecked = input("Number of searches:")
 timesChecked = int(getTimesChecked)
-if(timesChecked > 15):
-    timesChecked = 15
-    print("Times serched is too high. 15 checks chosen.")
+if(timesChecked > 30):
+    timesChecked = 30
+    print("Times serched is too high. 30 checks chosen.")
 while (timesChecked > 0):
 
     # Grab the page again
